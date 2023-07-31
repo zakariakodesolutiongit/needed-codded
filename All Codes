@@ -4,3 +4,16 @@
 
 
 #04AE6E
+
+
+$repeater->add_control(
+    'add_active_class',
+    [
+        'label' => esc_html__( 'Add Active Class?', 'mascot-core-satnet' ),
+        'type' => \Elementor\Controls_Manager::SWITCHER,
+        'label_on' => __( 'Hide', 'mascot-core-satnet' ),
+        'label_off' => __( 'Show', 'mascot-core-satnet' ),
+        'return_value'	=> 'active',
+        'default'	=> '',
+    ]
+);
